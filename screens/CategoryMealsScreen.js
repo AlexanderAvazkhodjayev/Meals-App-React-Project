@@ -22,7 +22,12 @@ const CategoryMealsScreen = (props) => {
         complexity={itemData.item.complexity}
         affordability={itemData.item.affordability}
         onSelectMeals={() => {
-          //props.navigation.navigate({ routeName: "mealDetail" });
+          props.navigation.navigate({
+            routeName: "mealDetail",
+            params: {
+              mealId: itemData.item.id,
+            },
+          });
         }}
       />
     );
