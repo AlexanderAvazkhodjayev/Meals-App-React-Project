@@ -7,6 +7,10 @@ import { enableScreens } from "react-native-screens";
 
 import MealsNavigator from "./navigation/MealsNavigator";
 
+// import { LogBox } from "react-native";
+// LogBox.ignoreLogs(["Warning: ..."]); // Ignore log notification by message
+// LogBox.ignoreAllLogs(); //Ignore all log notifications
+
 enableScreens();
 
 const fetchFonts = () => {
